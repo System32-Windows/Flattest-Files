@@ -60,7 +60,12 @@
             padding: 1px;
             color: aliceblue;
         }
+        
+        #warn {
+            color: #f00;
+        }
     </style>
+    <script src="FlattestCDN/script.js"></script>
 </head>
 
 <body>
@@ -69,16 +74,13 @@
         <h1>File Repository</h1>
     </header>
     <main>
-        <form action="">
-            <input type="text" name="who" id="who" placeholder="Enter your Roblox username" autocomplete="username">
-            <input type="password" name="pass" id="pass" placeholder="Enter your Flattest Pass ID" autocomplete="current-password"><br><br>
-            <button type="button" title="Submit">Submit</button>
-            <p>No
-                <phpmarker>PHP</phpmarker> was used in this form (it's a GitHub page),<br>thus your data can't be shared to me, or to hackers.</p>
-        </form>
-        <div id="thefiles">
-
-        </div>
+        <p id="warn"></p>
+        <input type="text" name="who" id="who" placeholder="Enter your Roblox username" autocomplete="username">
+        <input type="password" name="pass" id="pass" placeholder="Enter your Flattest Pass ID" autocomplete="current-password"><br><br>
+        <button type="button" title="Submit" onclick="submit()">Submit</button>
+        <p>No
+            <phpmarker>PHP</phpmarker> was used in this form (it's a GitHub page),<br>thus your data can't be shared to hackers.</p>
+        <div id="thefiles"></div>
         <div id="seal"></div>
     </main>
 
